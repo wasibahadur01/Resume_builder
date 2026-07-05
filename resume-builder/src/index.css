@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Print specific rules for true PDF generation using standard print */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-full {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+  }
+  .print-page-break {
+    page-break-inside: avoid;
+  }
+  @page {
+    size: letter;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+}
+
+/* Custom Editor Light Theme Overrides */
+.light-theme-editor {
+  background-color: #f8fafc !important;
+  color: #1e293b !important;
+}
+
+.light-theme-editor .bg-slate-950\/80,
+.light-theme-editor .bg-slate-950,
+.light-theme-editor .bg-slate-900\/40,
+.light-theme-editor .bg-slate-900,
+.light-theme-editor .bg-slate-950\/40,
+.light-theme-editor .bg-slate-950\/20,
+.light-theme-editor .bg-slate-900\/50,
+.light-theme-editor section {
+  background-color: #ffffff !important;
+}
+
+.light-theme-editor header {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+.light-theme-editor header h1 {
+  background: none !important;
+  color: #0f172a !important;
+  -webkit-text-fill-color: initial !important;
+}
+
+.light-theme-editor footer {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #475569 !important;
+}
+
+.light-theme-editor .border-slate-800,
+.light-theme-editor .border-slate-800\/80,
+.light-theme-editor .border-slate-700,
+.light-theme-editor .border-slate-900,
+.light-theme-editor div,
+.light-theme-editor section,
+.light-theme-editor button {
+  border-color: #e2e8f0 !important;
+}
+
+.light-theme-editor input,
+.light-theme-editor textarea,
+.light-theme-editor select {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.light-theme-editor input:focus,
+.light-theme-editor textarea:focus,
+.light-theme-editor select:focus {
+  border-color: #2563eb !important;
+}
+
+.light-theme-editor .text-slate-100,
+.light-theme-editor .text-slate-200,
+.light-theme-editor .text-slate-300 {
+  color: #1e293b !important;
+}
+
+.light-theme-editor .text-slate-400,
+.light-theme-editor .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Specific elements like active tab states in the sidebar */
+.light-theme-editor .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+.light-theme-editor .bg-slate-800\/80 {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+.light-theme-editor .hover\:bg-slate-700:hover {
+  background-color: #e2e8f0 !important;
+}
+
+.light-theme-editor .hover\:bg-slate-800\/60:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Middle column layout sheet container */
+.light-theme-editor .xl\:col-span-5 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Dark mode live preview resume-sheet styling, ONLY active under screen context so print is 100% white/black paper */
+@media screen {
+  .dark-sheet {
+    background-color: #030712 !important; /* slate-950 */
+    color: #f8fafc !important; /* slate-50 */
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5) !important;
+  }
+  
+  .dark-sheet h1,
+  .dark-sheet h2,
+  .dark-sheet h3,
+  .dark-sheet h4,
+  .dark-sheet h5,
+  .dark-sheet strong,
+  .dark-sheet .text-slate-900,
+  .dark-sheet .text-slate-950,
+  .dark-sheet .text-slate-800 {
+    color: #f8fafc !important;
+  }
+  
+  .dark-sheet .text-slate-700,
+  .dark-sheet .text-slate-600,
+  .dark-sheet .text-slate-500 {
+    color: #cbd5e1 !important; /* slate-300 */
+  }
+
+  .dark-sheet .border-slate-900,
+  .dark-sheet .border-slate-400,
+  .dark-sheet .border-slate-300,
+  .dark-sheet .border-slate-200,
+  .dark-sheet .border-slate-100 {
+    border-color: #334155 !important; /* slate-700 */
+  }
+  
+  .dark-sheet .bg-slate-50,
+  .dark-sheet .bg-slate-100,
+  .dark-sheet .bg-slate-200 {
+    background-color: #1e293b !important; /* slate-800 */
+    color: #f1f5f9 !important;
+  }
+  
+  .dark-sheet .bg-slate-950,
+  .dark-sheet .bg-slate-950\/10 {
+    background-color: #020617 !important;
+  }
+}

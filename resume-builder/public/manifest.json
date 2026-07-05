@@ -1,0 +1,18 @@
+{
+  "name": "Resume Builder",
+  "short_name": "ResumeBuilder",
+  "description": "An AI-powered professional resume and CV builder with elegant templates, live print preview, and interactive AI writing assistant capabilities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/src/assets/images/app_icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

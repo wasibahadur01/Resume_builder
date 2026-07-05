@@ -1,0 +1,6 @@
+{
+  "name": "Resume Builder",
+  "description": "An AI-powered professional resume and CV builder with elegant templates, live print preview, and interactive AI writing assistant capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
